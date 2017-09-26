@@ -1,4 +1,4 @@
-* { box-sizing: border-box; }
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 html, body {
   font-family: 'Libre Baskerville', serif;
@@ -24,16 +24,24 @@ h1, h2 {
 }
 
 .wrapper {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0 25px;
   height: 100%;
   width: 100%;
 }
 
 .wrapper-inner {
-  flex: 0 0 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
 }
 
 .social-icon {
@@ -63,6 +71,8 @@ h1, h2 {
   padding: 15px 25px;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-transition: 0.2s linear all;
+  -o-transition: 0.2s linear all;
   transition: 0.2s linear all;
 }
 
